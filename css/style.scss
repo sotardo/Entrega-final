@@ -147,6 +147,7 @@ a {
     }
 
     .item-service {
+        background-color: #a9f85f00;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -156,8 +157,8 @@ a {
         height: 300px;
         margin: 0 auto;
         margin-top: 100px;
-        box-shadow: 0px 2px 18px 0px $verde-b;;
         border-radius: 10px;
+        border: 3px solid $verde-b;
 
         i {
             font-size: 80px;
@@ -1213,6 +1214,15 @@ align-items: center;
     .title-item {
         height: 100px;
     }
+    .main-index {
+        .row{
+            .container-text-main{
+                p {
+                    font-size: 24px;
+                }
+            } 
+        } 
+    };
 }
 
 /* Quienes somos */
@@ -1244,15 +1254,7 @@ footer {
             height: 300px;
         }
     }
-.main-index {
-        .row{
-            .container-text-main{
-                p {
-                    font-size: 24px;
-                }
-            } 
-        } 
-    };
+
 }
 
 
@@ -1499,7 +1501,7 @@ footer {
         height: 1300px;
 
         .text-seg {
-            font-size: 18px;
+            font-size: 15px;
         }
 
         .container-text-main {
@@ -1755,7 +1757,7 @@ footer {
     }
 
     .header-web .cont-web {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .nav-web {
