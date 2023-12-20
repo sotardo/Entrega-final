@@ -21,6 +21,7 @@ $blanco: #ffff;
 $verde: #97b59d;
 $verde-b: #67c214;
 $gradiente: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+$gradiente2: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 $shadow: .5px .5px 1px rgba(0, 0, 0, 0.1);
 $shadow-blanca: 0 0 4px rgba(255, 255, 255, 0.8);
 $max-width-text: 95%;
@@ -82,6 +83,10 @@ a {
     }
 
     .nav-web {
+        i {
+            font-size: 40px;
+            color: $verde-b;
+        }
         background-color: transparent;
 
         .navbar-brand {
@@ -413,7 +418,7 @@ footer {
 /* Mobile Page */
 .jumbotron {
     height: 100vh;
-    background-image: url(../img/mobile.jpg);
+    background: $gradiente2, url(../img/mobile.jpg) ;
     background-size: cover;
     background-position: center;
 }
@@ -423,22 +428,29 @@ footer {
     margin-top: 40px;
     font-weight: bold;
     font-size: 60px;
-    color: #ec1b5e;
+    color: $verde-b;
 }
 
 .cont-principal {
+    max-width: 95%;
+    width: 100%;
+    text-align: center ;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: start;
-    padding: 50px;
+    margin-top: 14px;
+    text-shadow: $shadow;
+    color: white;
 
     p {
         font-size: 30px;
     }
 }
 
-
+.body-mobile {
+    background-color: $negro;
+}
 
 /* Cards */
 .rowsio {
@@ -452,7 +464,8 @@ footer {
     position: relative;
     width: 400px;
     height: 450px;
-    border: none;
+    border: 10px solid $verde-b;
+    border-radius: 20px;
 
     .face {
         position: absolute;
@@ -489,7 +502,7 @@ footer {
 
     .back {
         transform: perspective(600px) rotateY(180deg);
-        background: $violeta;
+        background: #1b3800;
         padding: 15px;
         color: #f3f3f3;
         display: flex;
@@ -535,7 +548,23 @@ footer {
 .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+.nav-mobile {
+    position: fixed !important;
+    width: 100% !important;
+    background-color: $negro !important;   
 
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+
+    }
+    .navbar-toggler {
+        border: none !important;
+        i {
+            font-size: 40px;
+            color: $verde-b;
+        }
+    }
+}
 /* Desarrollo-web */
 .header-web {
     width: 100%;
@@ -545,18 +574,32 @@ footer {
     background-size: cover;
 
     .nav-web {
+        i {
+            font-size: 40px;
+            color: $verde-b;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none !important;
+
+        }
+        .navbar-toggler {
+            border: none !important;
+        }
         background-color: transparent;
 
         .navbar-brand {
             color: $blanco;
+            span {
+                color: $verde-b !important;
+            }
         }
 
         .nav-link:focus {
-            color: $rojo;
+            color: $verde-b;
         }
 
         .nav-link:hover {
-            color: $rojo;
+            color: $verde-b;
         }
 
         .dropdown-menu {
@@ -568,7 +611,7 @@ footer {
             }
 
             li a:hover {
-                color: $rojo;
+                color: $verde-b;
                 font-weight: bold;
             }
         }
@@ -594,7 +637,6 @@ footer {
         text-shadow: $shadow-blanca;
     }
 }
-
 .main-web {
     max-width: $max-width-text;
     width: 100%;
@@ -606,13 +648,14 @@ footer {
         margin-top: 50px;
         font-size: $font-grande;
         font-weight: 600;
+        text-align: center;
 
         aside {
             font-weight: bold;
         }
 
         span {
-            color: $rojo;
+            color: $verde-b;
         }
 
         text-align: left;
@@ -630,7 +673,7 @@ footer {
 
             span {
                 text-transform: capitalize;
-                color: $rojo;
+                color: $verde-b;
                 font-size: 38px;
                 font-weight: bold;
             }
@@ -704,7 +747,7 @@ footer {
 
     .title-back {
         text-transform: capitalize;
-        color: $rojo;
+        color: $verde-b;
         font-size: 38px;
         font-weight: bold;
     }
@@ -716,7 +759,7 @@ footer {
     }
 
     .back {
-        background-color: #a78b83;
+        background-color: #1b3800;
     }
 }
 
@@ -740,6 +783,17 @@ footer {
     }
 
     .nav-web {
+        i {
+            font-size: 40px;
+            color: $verde-b;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none !important;
+
+        }
+        .navbar-toggler {
+            border: none !important;
+        }
         background-color: transparent;
 
         .navbar-brand {
@@ -1116,7 +1170,18 @@ align-items: center;
     margin-top: 0;
 }
 .nav-contact {
-    background-color: transparent;
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+
+    }
+    .navbar-toggler {
+        border: none !important;
+        i {
+            font-size: 40px;
+            color: $verde-b;
+        }
+    }
+    background-color: #181C20;
     position: fixed;
     top: 0;
     width: 100%;
@@ -1157,7 +1222,12 @@ align-items: center;
     }
 }
 
-
+.f-w {
+    margin-top: 100px !important;
+}
+.f-dw {
+    margin-top: 300px !important;
+}
 /* ----------------------------Medias---------------------------------------------------------------------------------------------------------------------------------------------- */
 @media (max-width: 1700px) {
     .main-seguridad {
@@ -1487,7 +1557,9 @@ footer {
         margin-top: 0;
     }
     
-
+    .f-dw {
+        margin-top: 1000px !important;
+    }
 } 
 
 
@@ -1537,10 +1609,16 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-
     .header-web .cont-web {
         font-size: 50px;
     }
+    .title-mobile {
+        font-size: 40px;
+    }
+    .cont-principal p {
+        font-size: 24px;
+    }
+}
 
     @media screen and (max-width:575px) {
         .container-clientes {
@@ -1562,6 +1640,7 @@ footer {
                 }
             }
         }
+
     }
 
     @media screen and (max-width:527px) {
@@ -1572,7 +1651,7 @@ footer {
         }
 
     }
-}
+
 
 
 @media screen and (max-width:560px) {
@@ -1580,6 +1659,7 @@ footer {
         .cont-web {
             p {
                 font-size: 40px;
+                margin-top: -200px;
             }
         }
     }
@@ -1698,7 +1778,7 @@ footer {
 
         .container-text-contact {
             p {
-                font-size: 15px;
+                font-size: 13.9px;
             }
         }
     }
@@ -1736,7 +1816,9 @@ footer {
         }
         
     }
-
+    .f-dw {
+        margin-top: 1200px !important;
+    }
 }
 
 @media screen and (max-width: 402px) {
@@ -1758,6 +1840,7 @@ footer {
 
     .header-web .cont-web {
         font-size: 28px;
+
     }
 
     .nav-web {
@@ -1850,5 +1933,8 @@ footer {
 @media screen and (max-width: 331px) {
     .container-video {
         margin-top: 190px;
+    }
+    .f-dw {
+        margin-top: 1300px !important;
     }
 }
