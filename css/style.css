@@ -24,11 +24,6 @@ a {
   font-size: 28px;
   font-weight: bolder;
 }
-.navbar .navbar-brand span {
-  color: #ec1b5e;
-  margin-left: 5px;
-  box-shadow: 1px solid black;
-}
 .navbar .nav-item a {
   font-size: 23px;
   color: #000000;
@@ -175,45 +170,6 @@ a {
 }
 .main-index .row .container-text-main span {
   color: #67c214;
-}
-
-.title-clientes-main {
-  background-color: #181C20;
-  font-size: 40px;
-  color: #67c214;
-  padding-top: 30px;
-}
-
-.slider {
-  background-color: #181C20;
-  height: 120px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.slider-track {
-  animation: scroll 5s linear infinite;
-  display: flex;
-}
-
-.slide {
-  height: 100px;
-  min-width: 250px;
-  box-sizing: border-box;
-}
-
-.slider-track {
-  animation-delay: 1s;
 }
 
 .footer-main {
