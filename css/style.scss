@@ -77,6 +77,13 @@ a {
     }
 
     .nav-web {
+        .navbar-toggler:focus {
+            box-shadow: none !important;
+
+        }
+        .navbar-toggler {
+            border: none !important;
+        }
         i {
             font-size: 40px;
             color: $verde-b;

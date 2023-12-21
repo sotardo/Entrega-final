@@ -48,6 +48,12 @@ a {
 .header-main .nav-web {
   background-color: transparent;
 }
+.header-main .nav-web .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.header-main .nav-web .navbar-toggler {
+  border: none !important;
+}
 .header-main .nav-web i {
   font-size: 40px;
   color: #67c214;
