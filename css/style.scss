@@ -1489,6 +1489,7 @@ footer {
                 h1 {
                     font-size: 3rem;
                     text-align: center;
+                    margin-top: 100px;
                 }
                 .data {
                     p {
@@ -1605,6 +1606,16 @@ footer {
         .angular {
             img {
                 height: 200px;
+            }
+        }
+        footer {    
+            .row-contact {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+    
+            .title-footer {
+                justify-content: start;
             }
         }
 
@@ -1724,38 +1735,6 @@ footer {
         margin-top: 250px;
 
     }
-
-    .f-m {
-        .f-row {
-            .row-contact {
-                i {
-                    font-size: 26px;
-                }
-            }
-        }
-
-        .container-text-contact {
-            p {
-                font-size: 13.9px;
-            }
-        }
-    }
-
-    .f-s {
-        .f-row {
-            .row-contact {
-                i {
-                    font-size: 26px;
-                }
-            }
-        }
-
-        .container-text-contact {
-            p {
-                font-size: 15px;
-            }
-        }
-    }
     .main-index {
         .title-qs {
             font-size: 33px;
@@ -1780,6 +1759,18 @@ footer {
 }
 
 @media screen and (max-width: 402px) {
+    .logo-secure{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-main {
+        .cont-web p {
+            font-size: 38px;
+            margin-top: -100px;
+        }
+    }
     .img-service img {
         height: 170px;
     }

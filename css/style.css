@@ -1184,6 +1184,7 @@ footer .container-text-contact p {
   .main-contacto .container-contacto .box-info h1 {
     font-size: 3rem;
     text-align: center;
+    margin-top: 100px;
   }
   .main-contacto .container-contacto .box-info .data p {
     font-size: 1.8rem;
@@ -1261,6 +1262,13 @@ footer .container-text-contact p {
   .angular img {
     height: 200px;
   }
+  footer .row-contact {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  footer .title-footer {
+    justify-content: start;
+  }
 }
 @media screen and (max-width: 560px) {
   .header-main .cont-web p {
@@ -1337,18 +1345,6 @@ footer .container-text-contact p {
   .frame-descrip {
     margin-top: 250px;
   }
-  .f-m .f-row .row-contact i {
-    font-size: 26px;
-  }
-  .f-m .container-text-contact p {
-    font-size: 13.9px;
-  }
-  .f-s .f-row .row-contact i {
-    font-size: 26px;
-  }
-  .f-s .container-text-contact p {
-    font-size: 15px;
-  }
   .main-index .title-qs {
     font-size: 33px;
   }
@@ -1363,6 +1359,16 @@ footer .container-text-contact p {
   }
 }
 @media screen and (max-width: 402px) {
+  .logo-secure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-main .cont-web p {
+    font-size: 38px;
+    margin-top: -100px;
+  }
   .img-service img {
     height: 170px;
   }
